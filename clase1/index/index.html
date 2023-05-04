@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    <link rel="icon" href="./assets/flower.png" />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="encabezados-container">
+      <h1>Hola Mundo</h1>
+      <h2>Es una prueba</h2>
+      <div class="encabezados">
+        <h3>
+          Hola Mundo
+        </h3>
+      </div>
+    </div>
+    <button class="theme-switch" onclick="toggleTheme()">Toggle Theme</button>
+  </body>
+</html>
+
+<script>
+  const root = document.documentElement;
+  const lightTheme = {
+    primaryColor: "#f1f1f1",
+    secondaryColor: "#666",
+    tertiaryColor: "#000",
+  };
+  const darkTheme = {
+    primaryColor: "#191919",
+    secondaryColor: "#999",
+    tertiaryColor: "#fff",
+  };
+  let theme = localStorage.getItem("theme") || "dark";
+  if (theme === "light") {
+    root.style.setProperty("--primary-color", lightTheme.primaryColor);
+    root.style.setProperty("--secondary-color", lightTheme.secondaryColor);
+    root.style.setProperty("--tertiary-color", lightTheme.tertiaryColor);
+  } else if (theme === "dark") {
+    root.style.setProperty("--primary-color", darkTheme.primaryColor);
+    root.style.setProperty("--secondary-color", darkTheme.secondaryColor);
+    root.style.setProperty("--tertiary-color", darkTheme.tertiaryColor);
+  }
+  function toggleTheme() {
+    if (theme === "light") {
+      theme = "dark";
+      localStorage.setItem("theme", "dark");
+      root.style.setProperty("--primary-color", darkTheme.primaryColor);
+      root.style.setProperty("--secondary-color", darkTheme.secondaryColor);
+      root.style.setProperty("--tertiary-color", darkTheme.tertiaryColor);
+    } else {
+      theme = "light";
+      localStorage.setItem("theme", "light");
+      root.style.setProperty("--primary-color", lightTheme.primaryColor);
+      root.style.setProperty("--secondary-color", lightTheme.secondaryColor);
+      root.style.setProperty("--tertiary-color", lightTheme.tertiaryColor);
+    }
+  }
+</script>
