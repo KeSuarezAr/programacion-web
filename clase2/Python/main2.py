@@ -34,11 +34,12 @@ def divideArrays(arr1, arr2):
 
 
 def randomArray():
-    return np.random.randint(0, 100, 10)
+    return np.random.random((3, 3))
 
 
 print(combineArrays(arreglo, arreglo2))
 print(sumArrays(arreglo, arreglo2))
 print(multiplyArrays(arreglo, arreglo2))
 print(divideArrays(arreglo, arreglo2))
-print(randomArray())
+random = randomArray().sum(axis=0)
+print(random)
