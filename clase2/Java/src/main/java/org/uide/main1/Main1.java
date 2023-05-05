@@ -1,14 +1,20 @@
 package org.uide.main1;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+
+        String[] testnames = { "Test1", "Test2", "Test3" };
+
         String[] names = inputNames(scanner);
-        String[] results = findNames(names, scanner);
-        for (String result : results) {
+        String[] names2 = findNames(names, scanner);
+        String[] names3 = addArrays(names2, testnames);
+        String[] names4 = sortArrays(names3);
+        for (String result : names4) {
             System.out.println(result);
         }
     }
@@ -43,4 +49,24 @@ public class Main1 {
         }
         return allNames;
     }
+
+    public static String[] addArrays(String[] array1, String[] array2) {
+        String[] newArray = new String[array1.length + array2.length];
+        int index = 0;
+        for (String string : array1) {
+            newArray[index] = string;
+            index++;
+        }
+        for (String string : array2) {
+            newArray[index] = string;
+            index++;
+        }
+        return newArray;
+    }
+
+    public static String[] sortArrays(String[] array) {
+        Arrays.sort(array);
+        return array;
+    }
+
 }
