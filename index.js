@@ -33,6 +33,6 @@ function calcularFechas(event) {
   ).textContent = `Fecha de salida: ${salidaFormateada}`;
 
   document.getElementById(
-    "diasEstadia"
+    "dias"
   ).textContent = `Número de días: ${dias}`;
 }

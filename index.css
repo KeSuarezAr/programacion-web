@@ -120,7 +120,7 @@ button[type="submit"] {
 #greet,
 #fechaEntrada,
 #fechaSalida,
-#diasEstadia {
+#dias {
   font-weight: bold;
   padding: 10px;
 }
