@@ -14,7 +14,7 @@ nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-} 
+}
 
 nav li {
   display: inline-block;
@@ -63,6 +63,7 @@ label {
 
 input[type="text"],
 input[type="date"],
+input[type="number"],
 button[type="submit"] {
   padding: 10px;
   margin-bottom: 10px;
@@ -114,4 +115,12 @@ button[type="submit"] {
   font-size: 14px;
   font-style: italic;
   text-align: right;
+}
+
+#greet,
+#fechaEntrada,
+#fechaSalida,
+#dias {
+  font-weight: bold;
+  padding: 10px;
 }

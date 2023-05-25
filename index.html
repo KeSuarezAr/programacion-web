@@ -22,7 +22,7 @@
         <p>
           Este es el lugar perfecto para relajarse y disfrutar de la naturaleza.
         </p>
-        <img src="./assets/main.jpg" alt="">
+        <img src="./assets/main.jpg" alt="" />
       </section>
       <section>
         <h2>Alojamiento</h2>
@@ -53,11 +53,16 @@
           <input type="text" id="nombre" required />
           <label for="fecha">Fecha de llegada:</label>
           <input type="date" id="fecha" required />
+          <label for="dias">Número de días:</label>
+          <input type="number" id="dias" min="1" max="30" value="7" required />
           <button type="submit" onclick="calcularFechas(event)">
             Calcular fechas
           </button>
         </form>
-        <div id="fechas"></div>
+        <div id="greet"></div>
+        <div id="fechaEntrada"></div>
+        <div id="fechaSalida"></div>
+        <div id="dias"></div>
       </section>
       <section>
         <h2>Reseñas</h2>
