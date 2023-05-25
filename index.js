@@ -24,7 +24,15 @@ function calcularFechas(event) {
     "greet"
   ).textContent = `Hola ${nombre}, tu reservacion se genero exitosamente.`;
 
-  document.getElementById("fechaEntrada").textContent = `Fecha de llegada: ${llegadaFormateada}`;
-  document.getElementById("fechaSalida").textContent = `Fecha de salida: ${salidaFormateada}`;
-  document.getElementById("diasEstadia").textContent = `Número de días: ${dias}`;
+  document.getElementById(
+    "fechaEntrada"
+  ).textContent = `Fecha de llegada: ${llegadaFormateada}`;
+
+  document.getElementById(
+    "fechaSalida"
+  ).textContent = `Fecha de salida: ${salidaFormateada}`;
+
+  document.getElementById(
+    "diasEstadia"
+  ).textContent = `Número de días: ${dias}`;
 }
