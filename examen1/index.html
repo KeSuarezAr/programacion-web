@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi sitio vacacional favorito</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mi sitio vacacional favorito</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Alojamiento</a></li>
+          <li><a href="#">Actividades</a></li>
+          <li><a href="#">Reservas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Bienvenido a mi sitio vacacional favorito</h2>
+        <p>
+          Este es el lugar perfecto para relajarse y disfrutar de la naturaleza.
+        </p>
+      </section>
+      <section>
+        <h2>Alojamiento</h2>
+        <div class="lists">
+          <img src="./assets/alojamiento.jpg" alt="Alojamiento" />
+          <ul>
+            <li>Habitaciones con vista al mar</li>
+            <li>Piscina al aire libre</li>
+            <li>Restaurante con comida local e internacional</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Actividades</h2>
+        <div class="lists">
+          <img src="./assets/actividades.jpg" alt="Actividades" />
+          <ul>
+            <li>Senderismo</li>
+            <li>Buceo</li>
+            <li>Paseos en bote</li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <h2>Reservas</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+          <label for="fecha">Fecha de llegada:</label>
+          <input type="date" id="fecha" required />
+          <button type="submit" onclick="calcularFechas()">
+            Calcular fechas
+          </button>
+        </form>
+        <div id="fechas"></div>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
