@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hachiko</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Siempre a tu lado, Hachiko</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Descripción</h2>
+        <p>
+          Siempre a tu lado, Hachikō (Hachi: A Dog's Tale en inglés) es una
+          película dramática estadounidense de 2009 basada en la historia real
+          del fiel perro japonés Hachikō. Es una nueva versión de la cinta
+          japonesa de 1987 Hachikō Monogatari, dirigida por Seijirō Kōyama.
+          Escrita por Stephen P. Lindsey, fue dirigida por Lasse Hallström y
+          protagonizada por Richard Gere, Joan Allen y Sarah Roemer. En Japón se
+          estrenó el 8 de agosto de 2009. En Estados Unidos se proyectó en el
+          Festival Internacional de Seattle el 13 de junio del mismo año antes
+          de su distribución en salas, que se inició el 18 de diciembre.
+        </p>
+      </section>
+      <section>
+        <h2>Imágenes</h2>
+        <div class="gallery">
+          <img src="./assets/Imagen1.png" alt="Imagen 1" />
+          <img src="./assets/Imagen2.png" alt="Imagen 2" />
+          <img src="./assets/Imagen3.png" alt="Imagen 3" />
+        </div>
+      </section>
+      <section>
+        <h2>Reservas</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required />
+          <label for="fecha">Fecha de llegada:</label>
+          <input type="date" id="fecha" required />
+          <button type="submit" onclick="calcularFechas(event)">
+            Calcular fechas
+          </button>
+        </form>
+        <div id="greet"></div>
+        <div id="fechas"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
