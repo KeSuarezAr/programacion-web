@@ -48,4 +48,8 @@ router.post("/profesores", async (req, res) => {
   }
 });
 
+router.stack.forEach((r) => {
+  console.log(`Loaded ${Object.keys(r.route.methods)[0].toUpperCase()} ${r.route.path}`);
+});
+
 export default router;

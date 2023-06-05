@@ -4,7 +4,7 @@ import router from "./src/router";
 import { Profesor } from "./src/model/Profesor";
 import { Estudiante } from "./src/model/Estudiante";
 
-var mongoUri = "mongodb://127.0.0.1:27017/test";
+var mongoUri = "mongodb://127.0.0.1:27017/proyectoweb";
 const port = 3000;
 const app = express();
 
